@@ -1,20 +1,20 @@
 var authConfig = {
 version: "2.0",
 dailyLimit: true, // Whether to limit each mailbox to submit requests only once a day
-client_id: '', // Google Client ID
-client_secret: '', // Google Client Secret
+client_id: 85919517597-usr1aitj1t4antcgsri2fuhcuakpvppc.apps.googleusercontent.com, // Google Client ID
+client_secret: UC6fR7BMyhBh5LikXnHX59DU, // Google Client Secret
 domain: "! ", //College name to display
 black_list: [""]
 };
 var gd;
 var today;
 
-authConfig.domainCount = 4;  //Remplace 4 by the number of different drives you have 
+authConfig.domainCount = 10;  //Remplace 4 by the number of different drives you have 
 
 // Create an account at https://dashboard.hcaptcha.com/signup and fulfill all details
 var hCaptchaConfig = {  
-    secret: '',
-    sitekey: ''
+    secret: 0x0C441168911B89b3F099a12452fea523460E9666,
+    sitekey: 513cf7d3-b4d6-4550-bc9a-8bb8dd62e3e4
 };
 
 var html = `
@@ -371,10 +371,10 @@ var html = `
                     <select id="channel" style="height: 27px;"  type="text" list="chlist" class="dropdownlist">
                         <option value="0" selected>Random</option>
 <!--                        Name it as you want-->
-                        <option value="1">01 - Choice 1</option>
-                        <option value="2">02 - Choice 2</option>
-                        <option value="3">03 - Choice 3</option>
-                        <option value="4" disabled>04 - Choice 4</option>
+                        <option value="1">kudyapi.com</option>
+                        <option value="2">mayhem210.com</option>
+                        <option value="3">onicks.net</option>
+                        <option value="4" disabled>elfnike.com</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -589,7 +589,7 @@ async function handleRequest(request) {
            }
            if (requestBody.channel == 2) {
                console.log(234);
-               authConfig.refresh_token = "REFRESH TOKEN";
+               authConfig.refresh_token = "1//04ROwzbr3E6QQCgYIARAAGAQSNwF-L9IrUuNAHAHM66CLL6N_mJwU3cepcd2p1aSr3IbfNzyx_VCBgmByaIs4A1xncW9PqYn6zMw";
                authConfig.domain = "NAME OF THE DOMAIN (it can be empty)";
            }
            if (requestBody.channel == 3) {
